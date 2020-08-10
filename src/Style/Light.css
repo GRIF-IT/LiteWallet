@@ -1,0 +1,91 @@
+// Copyright (c) 2018-2020, The Investcoin Project, GRIF-IT
+
+#include "LightStyle.h"
+
+namespace WalletGui {
+
+LightStyle::LightStyle() : Style("light", "Light") {
+
+}
+
+QString LightStyle::statusBarBackgroundColor() const {
+  color:  #734d26;
+}
+
+QString LightStyle::statusBarFontColor() const {
+  color: #ffffff;
+}
+
+QString LightStyle::headerBackgroundColor() const {
+  color: #734d26;
+}
+
+QString LightStyle::headerBorderColor() const {
+  color: #734d26;
+}
+
+QString LightStyle::addressFontColor() const {
+  color: #ffffff;
+}
+
+QString LightStyle::balanceFontColor() const {
+  color: #ffffff;
+}
+
+QString LightStyle::toolButtonBackgroundColorNormal() const {
+  color: #CCA66C;
+}
+
+QString LightStyle::toolButtonBackgroundColorHover() const {
+  color: #39332d;
+}
+
+QString LightStyle::toolButtonBackgroundColorPressed() const {
+  color: #39332d;
+}
+
+QString LightStyle::toolButtonFontColorNormal() const {
+  color: #ffffff;
+}
+
+QString LightStyle::toolButtonFontColorDisabled() const {
+  color: #b2ffffff;
+}
+
+QString LightStyle::toolBarBorderColor() const {
+  color: #2e4558;
+}
+
+QString LightStyle::getWalletSyncGifFile() const {
+  return QString(":icons/light/wallet-sync");
+}
+
+QPixmap LightStyle::getLogoPixmap() const {
+  return QPixmap(QString(":icons/light/logo"));
+}
+
+QPixmap LightStyle::getBalanceIcon() const {
+  return QPixmap(QString(":icons/total_balance"));
+}
+
+QPixmap LightStyle::getConnectedIcon() const {
+  return QPixmap(QString(":icons/light/connected"));
+}
+
+QPixmap LightStyle::getDisconnectedIcon() const {
+  return QPixmap(QString(":icons/light/disconnected"));
+}
+
+QPixmap LightStyle::getEncryptedIcon() const {
+  return QPixmap(QString(":icons/light/encrypted"));
+}
+
+QPixmap LightStyle::getNotEncryptedIcon() const {
+  return QPixmap(QString(":icons/light/decrypted"));
+}
+
+QPixmap LightStyle::getSyncedIcon() const {
+  return QPixmap(QString(":icons/light/synced"));
+}
+
+}

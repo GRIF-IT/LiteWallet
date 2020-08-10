@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>InvestcoinWallet</string>
+	<key>CFBundleGetInfoString</key>
+	<string>Investcoin Wallet</string>
+	<key>CFBundleIconFile</key>
+	<string>Investcoin.icns</string>
+	<key>CFBundleIdentifier</key>
+	<string>org.Investcoin.InvestcoinWallet-Qt</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleLongVersionString</key>
+	<string>@WALLET_VERSION@</string>
+	<key>CFBundleName</key>
+	<string>Investcoin Wallet</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>@WALLET_VERSION@</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>investcoinwallet@WALLET_VERSION@</string>
+	<key>CSResourcesFileMapped</key>
+	<true/>
+	<key>NSRequiresAquaSystemAppearance</key>
+	<false/>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright (c) 2020 The Investcoin Project, GRIF-IT</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+	<key>NSHighResolutionCapable</key>
+	<string>True</string>
+	<key>LSAppNapIsDisabled</key>
+	<string>True</string>  
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.finance</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.investcoin.InvestcoinPayment</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>investcoin</string>
+			</array>
+		</dict>
+  </array>
+</dict>
+</plist>
