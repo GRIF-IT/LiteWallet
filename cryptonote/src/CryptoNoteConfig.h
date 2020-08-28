@@ -42,7 +42,7 @@ const size_t   CRYPTONOTE_DISPLAY_DECIMAL_POINT              = 2;
 const uint64_t MINIMUM_FEE_V1                                = 01;
 const uint64_t MINIMUM_FEE_V2                                = 01;
 const uint64_t MINIMUM_FEE                                   = MINIMUM_FEE_V2;
-const uint64_t MAXIMUM_FEE                                   = 1000;
+const uint64_t MAXIMUM_FEE                                   = 01;
 
 const uint64_t DEFAULT_DUST_THRESHOLD                        = MINIMUM_FEE;
 const uint64_t MIN_TX_MIXIN_SIZE                             = 0;
@@ -80,7 +80,7 @@ const uint64_t CRYPTONOTE_MEMPOOL_TX_LIVETIME                = 60 * 60 * 24;    
 const uint64_t CRYPTONOTE_MEMPOOL_TX_FROM_ALT_BLOCK_LIVETIME = 60 * 60 * 24 * 7; //seconds, one week
 const uint64_t CRYPTONOTE_NUMBER_OF_PERIODS_TO_FORGET_TX_DELETED_FROM_POOL = 7;  // CRYPTONOTE_NUMBER_OF_PERIODS_TO_FORGET_TX_DELETED_FROM_POOL * CRYPTONOTE_MEMPOOL_TX_LIVETIME = time to forget tx
 
-const size_t   FUSION_TX_MAX_SIZE                            = CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_V1 * 30 / 100;
+const size_t   FUSION_TX_MAX_SIZE                            = CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE;
 const size_t   FUSION_TX_MIN_INPUT_COUNT                     = 12;
 const size_t   FUSION_TX_MIN_IN_OUT_COUNT_RATIO              = 4;
 

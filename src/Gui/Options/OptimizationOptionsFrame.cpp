@@ -21,6 +21,7 @@ const int MIN_THRESHOLD_ORDER_VALUE = 0;
 const int MAX_THRESHOLD_ORDER_VALUE = 6;
 const int MIN_MIXIN_VALUE = 0;
 const int MAX_MIXIN_VALUE = 5;
+const quint64 SECOND_MSECS = 1000;
 const quint64 MINUTE_MSECS = 1000 * 60;
 const quint64 HOUR_MSECS = MINUTE_MSECS * 60;
 const char OPTIMIZATION_OPTIONS_STYLE_SHEET_TEMPLATE[] =
@@ -127,6 +128,14 @@ void OptimizationOptionsFrame::setOptimizationManager(IOptimizationManager* _opt
 }
 
 void OptimizationOptionsFrame::initOptimizationPeriods() {
+  m_ui->m_periodCombo->addItem(tr("3 seconds"), 3 * SECOND_MSECS);
+  m_ui->m_periodCombo->addItem(tr("15 seconds"), 15 * SECOND_MSECS);
+  m_ui->m_periodCombo->addItem(tr("30 seconds"), 30 * SECOND_MSECS);
+  m_ui->m_periodCombo->addItem(tr("1 minutes"), 1 * MINUTE_MSECS);
+  m_ui->m_periodCombo->addItem(tr("3 minutes"), 3 * MINUTE_MSECS);
+  m_ui->m_periodCombo->addItem(tr("5 minutes"), 5 * MINUTE_MSECS);
+  m_ui->m_periodCombo->addItem(tr("10 minutes"), 10 * MINUTE_MSECS);
+  m_ui->m_periodCombo->addItem(tr("15 minutes"), 15 * MINUTE_MSECS);
   m_ui->m_periodCombo->addItem(tr("30 minutes"), 30 * MINUTE_MSECS);
   m_ui->m_periodCombo->addItem(tr("1 hour"), HOUR_MSECS);
   m_ui->m_periodCombo->addItem(tr("1.5 hours"), HOUR_MSECS + 30 * MINUTE_MSECS);
